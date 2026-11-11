@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Steps - Aplicação de Navegação e Gravação GPS</title>
+    <meta name="description" content="My Steps - A sua aplicação de caminhada, BTT e exploração offline. Gravação GPS, navegação por voz e total privacidade.">
+    <style>
+        :root {
+            --primary-color: #2e7d32;
+            --secondary-color: #1b5e20;
+            --accent-color: #81c784;
+            --bg-color: #f4f6f8;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --text-light: #666666;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+        }
+
+        .card h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.8rem;
+            font-size: 1.25rem;
+        }
+
+        .card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        .privacy-box {
+            background-color: #e8f5e9;
+            border-left: 5px solid var(--primary-color);
+            padding: 1.5rem;
+            margin: 3rem 0;
+            border-radius: 4px;
+        }
+
+        .privacy-box h2 {
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            background-color: #222;
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+
+        .btn-download {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: #1b5e20;
+            padding: 0.8rem 1.8rem;
+            font-weight: bold;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-top: 1.5rem;
+            transition: background 0.2s ease;
+        }
+
+        .btn-download:hover {
+            background-color: #66bb6a;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Steps</h1>
+        <p>A sua aplicação simples, privada e offline para caminhadas e percursos</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2 style="text-align: center; color: var(--secondary-color);">Principais Funcionalidades</h2>
+            <div class="features-grid">
+                <div class="card">
+                    <h3>📍 Gravação GPS Precisa</h3>
+                    <p>Registe as suas caminhadas, corridas e passeios de BTT com dados completos de distância, altitude, velocidade e tempo.</p>
+                </div>
+
+                <div class="card">
+                    <h3>🗺️ Mapas 100% Offline</h3>
+                    <p>Suporte para OpenStreetMap, OpenTopoMap e ficheiros de mapas locais (.MBTiles). Navegue sem gastar dados móveis ou sem rede.</p>
+                </div>
+
+                <div class="card">
+                    <h3>🗣️ Navegação por Voz</h3>
+                    <p>Receba orientações e alertas de voz em Português durante o percurso para nunca perder o caminho certo.</p>
+                </div>
+
+                <div class="card">
+                    <h3>📂 Suporte GPX</h3>
+                    <p>Importe e exporte os seus trilhos e rotas facilmente no formato standard GPX para utilizar em qualquer dispositivo.</p>
+                </div>
+
+                <div class="card">
+                    <h3>🔒 Privacidade Total</h3>
+                    <p>Sem criação de conta, sem anúncios e sem recolha de dados de localização em servidores externos. Tudo fica no seu telemóvel.</p>
+                </div>
+
+                <div class="card">
+                    <h3>🔋 Eficiência Energética</h3>
+                    <p>Otimizado para consumo reduzido de bateria em saídas de longa duração no meio da natureza.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="privacy-box">
+            <h2>Garantia de Privacidade</h2>
+            <p>O <strong>My Steps</strong> foi desenvolvido a pensar na sua autonomia e segurança. A aplicação não partilha os seus dados de localização com terceiros nem necessita de ligação à internet para guardar as suas atividades.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 My Steps. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
